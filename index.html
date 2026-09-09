@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laporan LKPD JavaScript - Variable</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav>
+      <div class="logo">&lt;/&gt; JS REPORT</div>
+      <div class="nav-links">
+        <a href="#identitas">Identitas</a>
+        <a href="#materi">Materi</a>
+        <a href="#aktivitas">Aktivitas</a>
+        <a href="#refleksi">Refleksi</a>
+      </div>
+      <button id="themeBtn" aria-label="Ganti tema">☾</button>
+    </nav>
+
+    <div class="hero-content">
+      <div>
+        <p class="badge">LAPORAN LKPD • JAVASCRIPT</p>
+        <h1>Mengenal &amp; Menggunakan <span>Variable</span></h1>
+        <p class="lead">Laporan pembelajaran Dasar-Dasar Pengembangan Perangkat Lunak dan Gim berdasarkan LKPD materi JavaScript – Variable.</p>
+        <a class="btn" href="#aktivitas">Mulai Membaca ↓</a>
+      </div>
+      <div class="code-card">
+        <div class="dots"><i></i><i></i><i></i></div>
+        <pre><code><span class="kw">const</span> nama = <span class="str">"Bintang"</span>;
+<span class="kw">let</span> kelas = <span class="str">"X PPLG 1"</span>;
+<span class="kw">const</span> materi = <span class="str">"Variable"</span>;
+
+console.log(nama);
+console.log(kelas);
+console.log(materi);</code></pre>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="identitas" class="section">
+      <div class="section-title"><span>01</span><h2>Identitas Pembelajaran</h2></div>
+      <div class="grid cards">
+        <article><small>Nama</small><strong>Bintang Muhammad Rahman</strong></article>
+        <article><small>Kelas</small><strong>X PPLG 1</strong></article>
+        <article><small>Mata Pelajaran</small><strong>Dasar-Dasar Pengembangan Perangkat Lunak dan Gim</strong></article>
+        <article><small>Materi</small><strong>Variable pada JavaScript</strong></article>
+        <article><small>Alokasi Waktu</small><strong>2 × 45 menit</strong></article>
+        <article><small>Model Pembelajaran</small><strong>Problem Based Learning / Discovery Learning</strong></article>
+      </div>
+    </section>
+
+    <section id="materi" class="section alt">
+      <div class="section-title"><span>02</span><h2>Ringkasan Materi</h2></div>
+      <div class="two-col">
+        <div>
+          <h3>Apa itu Variable?</h3>
+          <p>Variable dapat dianggap sebagai tempat untuk menyimpan sebuah data agar data tersebut dapat digunakan kembali oleh program.</p>
+          <div class="variable-box">
+            <div><b>let</b><span>nama</span><em>=</em><strong>"Andi"</strong></div>
+          </div>
+        </div>
+        <div>
+          <h3>Bagian dalam Variable</h3>
+          <ul class="clean-list">
+            <li><b>let</b> → membuat variable</li>
+            <li><b>nama</b> → nama variable</li>
+            <li><b>=</b> → memberikan nilai</li>
+            <li><b>"Andi"</b> → nilai yang disimpan</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="compare">
+        <div class="compare-card let">
+          <span class="tag">DAPAT BERUBAH</span>
+          <h3>let</h3>
+          <p>Digunakan untuk data yang masih mungkin berubah.</p>
+          <pre>let nilai = 80;
+nilai = 90;</pre>
+        </div>
+        <div class="compare-card const">
+          <span class="tag">TETAP</span>
+          <h3>const</h3>
+          <p>Digunakan untuk data yang tidak perlu diubah.</p>
+          <pre>const namaSekolah =
+"SMKN 1 Garut";</pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="aktivitas" class="section">
+      <div class="section-title"><span>03</span><h2>Aktivitas &amp; Jawaban</h2></div>
+
+      <div class="accordion">
+        <button class="acc-btn">Aktivitas 1 — Mengamati <span>+</span></button>
+        <div class="acc-content">
+          <p><b>Kode:</b></p>
+          <pre>let nama = "Budi";
+let umur = 16;
+let nilai = 85;
+console.log(nama);
+console.log(umur);
+console.log(nilai);</pre>
+          <p><b>1. Apa yang ditampilkan pada Console?</b><br>Budi, 16, dan 85.</p>
+          <p><b>2. Fungsi nama, umur, dan nilai?</b><br>Ketiganya merupakan nama variable yang digunakan untuk menyimpan data.</p>
+          <p><b>3. Apa yang terjadi jika console.log(nama) dijalankan?</b><br>Console menampilkan nilai yang tersimpan pada variable <code>nama</code>, yaitu Budi.</p>
+          <p><b>4. Apa yang dimaksud variable?</b><br>Variable adalah tempat untuk menyimpan data agar dapat digunakan kembali oleh program.</p>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="acc-btn">Aktivitas 3–4 — Praktik &amp; Eksperimen <span>+</span></button>
+        <div class="acc-content">
+          <p>Contoh program dengan data diri:</p>
+          <pre>let nama = "Bintang Muhammad Rahman";
+let kelas = "X PPLG 1";
+let umur = 16;
+
+console.log(nama);
+console.log(kelas);
+console.log(umur);</pre>
+          <p><b>Jawaban eksperimen:</b> Hasil pada Console berubah sesuai data baru karena nilai yang disimpan dalam variable telah diubah. Bagian yang diubah adalah nilai setelah tanda <code>=</code>.</p>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="acc-btn">Aktivitas 5 — Berbagai Jenis Data <span>+</span></button>
+        <div class="acc-content">
+          <div class="data-table">
+            <div><b>Variable</b><b>Nilai</b><b>Jenis Data</b></div>
+            <div><span>nama</span><span>"Andi"</span><span>String / teks</span></div>
+            <div><span>umur</span><span>17</span><span>Number / angka</span></div>
+            <div><span>tinggi</span><span>170</span><span>Number / angka</span></div>
+            <div><span>aktif</span><span>true</span><span>Boolean</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="acc-btn">Aktivitas 8 — Mana yang Benar? <span>+</span></button>
+        <div class="acc-content">
+          <div class="check-grid">
+            <span>✓ nama</span><span>✓ namaSiswa</span><span>✓ nama_siswa</span>
+            <span>✗ 2nama</span><span>✗ nama siswa</span><span>✓ nilaiAkhir</span>
+            <span>✓ nilai1</span><span>✗ nilai-akhir</span><span>✓ Alamat</span><span>✓ alamatSiswa</span>
+          </div>
+          <p><b>Perbaikan:</b> <code>2nama</code> → <code>nama2</code>, <code>nama siswa</code> → <code>namaSiswa</code>, <code>nilai-akhir</code> → <code>nilaiAkhir</code>.</p>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="acc-btn">Aktivitas 11 — Debugging <span>+</span></button>
+        <div class="acc-content">
+          <p>Kesalahan terdapat pada nama variable yang mengandung spasi dan variable yang diawali angka.</p>
+          <pre>let namaSiswa = "Budi";
+let umur = 16;
+let kelas2 = "XI RPL";
+
+console.log(namaSiswa);
+console.log(umur);
+console.log(kelas2);</pre>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="acc-btn">Aktivitas 12 — Challenge Profil Siswa <span>+</span></button>
+        <div class="acc-content">
+          <pre>const nama = "Bintang Muhammad Rahman";
+const kelas = "X PPLG 1";
+const jurusan = "Pengembangan Perangkat Lunak dan Gim";
+const umur = 16;
+const kota = "Bandung";
+const hobi = "Bermain game";
+const citaCita = "Programmer";
+const sekolah = "SMK";
+
+console.log(nama);
+console.log(kelas);
+console.log(jurusan);
+console.log(umur);
+console.log(kota);
+console.log(hobi);
+console.log(citaCita);
+console.log(sekolah);</pre>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="acc-btn">Tugas Individu — Data Produk Sederhana <span>+</span></button>
+        <div class="acc-content">
+          <pre>const namaProduk = "Keyboard";
+const kategori = "Perangkat Komputer";
+const harga = 150000;
+let stok = 10;
+const merek = "ABC";
+const tersedia = true;
+
+console.log(namaProduk);
+console.log(kategori);
+console.log(harga);
+console.log(stok);
+console.log(merek);
+console.log(tersedia);</pre>
+          <p>Program memenuhi ketentuan minimal 6 variable, menggunakan <code>let</code> dan <code>const</code>, mempunyai data teks dan angka, serta menampilkan data dengan <code>console.log()</code>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="refleksi" class="section alt">
+      <div class="section-title"><span>04</span><h2>Refleksi &amp; Kesimpulan</h2></div>
+      <div class="reflection-grid">
+        <article><span>3</span><h3>Hal yang dipelajari</h3><p>Pengertian variable, penggunaan let dan const, serta aturan penamaan variable.</p></article>
+        <article><span>2</span><h3>Hal yang masih membingungkan</h3><p>Perbedaan penggunaan data yang dapat berubah dan data yang sebaiknya tetap.</p></article>
+        <article><span>1</span><h3>Hal yang ingin dicoba</h3><p>Membuat program JavaScript sederhana dengan lebih banyak variable dan output.</p></article>
+      </div>
+
+      <div class="conclusion">
+        <h3>Kesimpulan</h3>
+        <p><b>Variable</b> adalah tempat untuk menyimpan data agar data dapat digunakan kembali oleh program.</p>
+        <p><b>let</b> digunakan untuk data yang masih mungkin berubah, sedangkan <b>const</b> digunakan untuk data yang tidak perlu diubah.</p>
+        <p>Untuk menampilkan isi variable ke Console, kita dapat menggunakan <code>console.log()</code>.</p>
+      </div>
+    </section>
+
+    <section class="section exit">
+      <div class="quote">“Error bukan berarti kamu gagal. Error adalah petunjuk bahwa programmu perlu diperbaiki.”</div>
+      <p class="source">Pesan untuk peserta didik — LKPD JavaScript: Variable</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 • Laporan LKPD JavaScript</p>
+    <button id="topBtn">↑ Kembali ke atas</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>d
